@@ -1,0 +1,32 @@
+{
+  "name": "@apiverve/leetspeak",
+  "version": "1.1.8",
+  "description": "Leet Speak is a simple tool for encoding and decoding Leet Speak. It returns the encoded or decoded Leet Speak.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/leetspeak-API.git"
+  },
+  "keywords": [
+    "leet speak","leet speak api","leet speak tool","leet speak software","leet speak service"
+  ],
+  "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/leetspeak-API/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/api/leetspeak?utm_source=npm",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "promise": "^8.3.0",
+    "axios": "1.7.9"
+  }
+}
