@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/leetspeak",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Leet Speak is a simple tool for encoding and decoding Leet Speak. It returns the encoded or decoded Leet Speak.",
   "main": "index.js",
   "scripts": {
