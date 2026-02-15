@@ -12,14 +12,12 @@ namespace APIVerve.API.LeetSpeak
     {
         /// <summary>
         /// The text to encode or decode in Leet Speak
-        /// Example: hello world
         /// </summary>
         [JsonProperty("text")]
         public string Text { get; set; }
 
         /// <summary>
-        /// The mode to use (encode or decode)
-        /// Example: encode
+        /// The mode to use
         /// </summary>
         [JsonProperty("mode")]
         public string Mode { get; set; }
