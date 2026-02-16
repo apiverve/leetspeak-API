@@ -44,7 +44,10 @@ from apiverve_leetspeak.apiClient import LeetspeakAPIClient
 # Initialize the client with your APIVerve API key
 api = LeetspeakAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "This is a simple piece of text", "mode": "encode" }
+query = {
+    "text": "This is a simple piece of text",
+    "mode": "encode"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "text": "This is a simple piece of text", "mode": "encode" }
+query = {
+    "text": "This is a simple piece of text",
+    "mode": "encode"
+}
 ```
 
 ###### Simple Request
@@ -122,7 +128,10 @@ from apiverve_leetspeak.apiClient import LeetspeakAPIClient, LeetspeakAPIClientE
 
 api = LeetspeakAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "This is a simple piece of text", "mode": "encode" }
+query = {
+    "text": "This is a simple piece of text",
+    "mode": "encode"
+}
 
 try:
     result = api.execute(query)
@@ -143,7 +152,10 @@ from apiverve_leetspeak.apiClient import LeetspeakAPIClient, LeetspeakAPIClientE
 
 api = LeetspeakAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "This is a simple piece of text", "mode": "encode" }
+query = {
+    "text": "This is a simple piece of text",
+    "mode": "encode"
+}
 
 try:
     result = api.execute(query)
@@ -177,7 +189,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_leetspeak.apiClient import LeetspeakAPIClient, LeetspeakAPIClientError
 
-query = { "text": "This is a simple piece of text", "mode": "encode" }
+query = {
+    "text": "This is a simple piece of text",
+    "mode": "encode"
+}
 
 # Using context manager ensures proper cleanup
 with LeetspeakAPIClient("[YOUR_API_KEY]") as api:
@@ -203,7 +218,10 @@ from apiverve_leetspeak.apiClient import LeetspeakAPIClient
 # Enable debug mode
 api = LeetspeakAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "text": "This is a simple piece of text", "mode": "encode" }
+query = {
+    "text": "This is a simple piece of text",
+    "mode": "encode"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -218,8 +236,12 @@ from apiverve_leetspeak.apiClient import LeetspeakAPIClient
 
 api = LeetspeakAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "text": "This is a simple piece of text",
+    "mode": "encode"
+}
+
 try:
-    query = { "text": "This is a simple piece of text", "mode": "encode" }
     result = api.execute(query)
     print(result)
 finally:
