@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:leetspeak-api:1.1.13'
+    implementation 'com.github.apiverve:leetspeak-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ LeetSpeakAPIClient client = new LeetSpeakAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("text", "hello world");
+    parameters.put("text", "This is a simple piece of text");
     parameters.put("mode", "encode");
 
     // Execute the request
