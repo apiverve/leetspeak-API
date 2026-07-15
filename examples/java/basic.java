@@ -12,8 +12,13 @@ public class BasicExample {
         LeetSpeakAPIClient client = new LeetSpeakAPIClient("YOUR_API_KEY_HERE");
 
         try {
-            // Execute the API request (no parameters required)
-            APIResponse response = client.execute(null);
+            // Request body
+            Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
+        parameters.put(&quot;text&quot;, &quot;This is a simple piece of text&quot;);
+        parameters.put(&quot;mode&quot;, &quot;encode&quot;);
+
+            // Execute the API request
+            APIResponse response = client.execute(parameters);
 
             // Check if the request was successful
             if (response.isSuccess()) {
